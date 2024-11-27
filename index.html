@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <div data-aos="flip-left">
+        <h1>watch <span  id="movies">100+</span>+ free movies</h1>
+    </div>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="hp-banner-indus-desktop.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="hp-banner-pb.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="ph1.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="hp-banner-indus-desktop.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="hp-banner-indus-desktop.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="hp-banner-indus-desktop.webp" alt="">
+        </div>
+        
+    </div>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="countMe/countMe.min.js"></script>
+    <script src="dist/owl.carousel.min.js"></script>
+    <script>
+         AOS.init();
+        $("#movies").countMe(0,0)
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+autoplayTimeout:500,
+autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+    </script>
+</body>
+</html>
